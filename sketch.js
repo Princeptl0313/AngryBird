@@ -3,7 +3,7 @@ const World= Matter.World;
 const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint
 var engine, world;
-var log,log2
+var log,log2,log3,log4
 var ground;
 var box,box2,box3,box4,box5
 var bird;
@@ -33,6 +33,8 @@ function setup(){
     bird = new Bird(150,250)
     pig = new Pig(810,350)
     box5 = new Box(810,160,70,70)
+    log3 = new Log(800,95,150,PI/4)
+    log4 = new Log(830,90,150,PI/-4)
     slingShot = new SlingShot(bird.body,{
         x:200,
         y:50
@@ -57,6 +59,8 @@ function draw(){
     box4.display()
     pig2.display()
     log2.display()
+    log3.display()
+    log4.display()
     slingShot.display()
    platForm.display()
 }
